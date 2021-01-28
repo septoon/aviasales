@@ -1,0 +1,30 @@
+.card {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20px;
+  padding: 20px 0 20px 0;
+}
+
+.card div {
+  width: 92%;
+  height: 39px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.card div:last-child {
+  margin-bottom: 0;
+}
+
+.price {
+  color: #2196F3;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.first {
+  
+}
