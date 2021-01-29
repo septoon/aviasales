@@ -7,7 +7,7 @@ const TicketsWrapper = props => {
   return (
     <div className={classes.tickets_wrapper}>
       <Tabs />
-      <Tickets />
+      <Tickets tickets={props.tickets} />
     </div>
   )
 }

@@ -1,7 +1,7 @@
 import './App.css';
 import Filter from './components/Filter/Filter';
 import Header from './components/Header/Header';
-import Tickets from './components/Tickets/TicketsWrapper';
+import TicketsContainer from './components/Tickets/TicketsContainer';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <div className="content">
       <Filter />
         <div className="main">
-          <Tickets />
+          <TicketsContainer />
         </div>
       </div>
     </div>
