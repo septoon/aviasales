@@ -6,8 +6,8 @@ import classes from './TicketsWrapper.module.css'
 const TicketsWrapper = props => {
   return (
     <div className={classes.tickets_wrapper}>
-      <Tabs />
-      <Tickets tickets={props.tickets} />
+      <Tabs toggleSort={props.toggleSort} />
+      <Tickets tickets={props.tickets} sort={props.sort} />
     </div>
   )
 }

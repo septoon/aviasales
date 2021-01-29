@@ -35,6 +35,10 @@
   border-bottom-right-radius: 5px;
 }
 
+.tab:hover {
+  background-color: #f4faff;
+}
+
 .tab:focus {
   outline: none;
   background-color: #2196F3;

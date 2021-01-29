@@ -1,12 +1,17 @@
 import React from 'react'
 import classes from './TicketsWrapper.module.css'
 
-const Tabs = props => {
+const Tabs = ({ toggleSort }) => {
+  const toSort = (e) => {
+    const sort = e.target.value
+    toggleSort(sort)
+  }
+
   return (
     <div className={classes.tabs}>
-      <button className={classes.tab}>Самый дешевый</button>
-      <button className={classes.tab}>Самый быстрый</button>
-      <button className={classes.tab}>Оптимальный</button>
+      <button onClick={ toSort } value='price' className={classes.tab}>Самый дешевый</button>
+      <button onClick={ toSort } value='duration' className={classes.tab}>Самый быстрый</button>
+      <button onClick={ toSort } value='optimal' className={classes.tab}>Оптимальный</button>
     </div>
   )
 }

@@ -1,15 +1,25 @@
 .wrapper {
-  width: 22%;
+  width: 24%;
+  height: 273px;
   background: #FFFFFF;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
-  padding-left: 20px;
-  padding-top: 20px;
+  padding: 20px 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .wrapper div {
   display: flex;
   align-items: center;
+  padding-left: 20px;
+  height: 43px;
+}
+
+.wrapper div:hover {
+  cursor: pointer;
+  background-color: #F1FCFF;
 }
 
 span {
@@ -20,6 +30,8 @@ input {
   width: 20px;
   height: 20px;
   border-color: #2196F3;
+  margin: 0;
+  margin-right: 10px;
 }
 
 .title {
@@ -27,4 +39,5 @@ input {
   font-weight: 600;
   font-size: 12px;
   text-transform: uppercase;
+  margin-left: 20px;
 }
